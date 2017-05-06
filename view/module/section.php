@@ -1,0 +1,2 @@
+<?php if(!isset($mx) || $mx == 'view/section_main.php') $mx = 'view/section_main.php'; //если переменного нет, то ссылаемся на главную страницу ?>
+<section id='<?=preg_replace('{view\/|\.php}',"",$mx);?>' class="primary-section"><div class="structure"> <?php require_once $mx; ?> </div></section>

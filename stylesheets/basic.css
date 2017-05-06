@@ -1,0 +1,105 @@
+/*здесь будут общие стили и переменные, которые будут использоваться по всему сайту*/
+
+/*========================================
+    Общее
+=========================================*/
+@keyframes AnimatorBackground{
+  from{ background: #efffc9;}
+  to { background: #fda840; }
+}
+
+body{
+  margin: 0;
+  animation: AnimatorBackground 10s ease-in-out .3s infinite alternate;
+  background: #efffc9;
+  color: #333;
+  font: italic 300 14px cursive;
+  font-size: 14px;
+}
+
+/*========================================
+    clearfix for float
+=========================================*/
+.clearfix{
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+
+/*========================================
+  сбросы
+=========================================*/
+
+/*========================================
+  Типографика (блоки)
+=========================================*/
+h1 {
+  color: #648880;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h2 {
+  color: #648880;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+h3 {
+  color: #648880;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+h4 {
+  color: #648880;
+  font-size: 18px;
+}
+
+h5{
+  margin: 10px 0;
+  color: #49652d;
+  font-size: 15px;
+  font-weight: 580;
+}
+
+p{
+  font: 300 16px/23px times new roman, cambria;
+  text-align: justify;
+}
+/*========================================
+  Типографика (не блоки)
+=========================================*/
+span{
+  color: #4c4b17;
+}
+
+b{
+  color: #49652d;
+  font-size: 15px;
+  font-weight: 580;
+}
+/*========================================
+  Типографика (ссылки)
+=========================================*/
+a {
+  color: #8A8F8E;
+  text-decoration: none;
+}
+a:hover {
+  color: #cec900;
+}
+/*========================================
+  Типографика (форма)
+=========================================*/
+input, select, textarea, button {
+  font: italic 400 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #5B6C44;
+  border: 1px solid #c6c9cc;
+}

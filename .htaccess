@@ -1,0 +1,44 @@
+﻿#Options ExecCGI
+
+#Автоматическое перенаправление пользователя на нужную страницу при возникновении ошибки 404, при неправельном адрессе URL
+ErrorDocument 404 /error404.php
+ErrorDocument 403 /error404.php
+
+		#МОДУЛЬ mod_rewrite
+#  деректива RewriteEngine: Включает/выключает механизм mod_rewrite для текущего запроса
+#  деректива RewriteCond: Она позволяет устанавливать условие, которое должно выполняться для обработки URL следующим за ним правилом RewriteRule
+#  деректива RewriteRule: Описывает правило изменения адреса URL, где  Pattern Substitution [Optional Flags]
+
+#редирект на Rick Astley
+RewriteEngine on
+RewriteRule ^сделал\.html$ https://www.youtube.com/watch?v=dQw4w9WgXcQ [R=301]
+
+#Для удаления index.php из URL
+RewriteEngine on
+RewriteRule ^index.php\/(.*)|index.php$ /$1 [QSA,R]
+
+#удаления повторов
+RewriteRule ^(.*)\.php\/(.*)$ /$2 [QSA,R]
+
+#для того, чтобы можно было зайти на сайт через специальные URL
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(chat2|user2|register2|about2)$ index.php [L]
+
+#прячем расширения файлов
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+#прячем get запросы 
+RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} -f
+#RewriteBase /
+#RewriteRule ^index.php?mx=chat$ chat [L,QSA] ???
+RewriteRule ^(chat|user|register|about)$ ?mx=$1 [L]
+RewriteRule ^id([0-9]*)$ ?mx=user&id=$1 [L,QSA]
+RewriteRule ^about/(exit|setup)$ ?mx=about&option=$1 [L]
+RewriteRule ^chat/([0-9]*)$ ?mx=chat&top=$1 [L]

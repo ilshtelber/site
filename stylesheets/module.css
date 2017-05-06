@@ -1,0 +1,94 @@
+/*сетка*/
+.structure{
+	margin: 0 auto;
+	width: 70%;
+	padding: 10px 0;
+}
+
+
+/*========================================
+    шапка
+=========================================*/
+.primary-header{
+    min-width: 380px;
+}
+
+.primary-header nav{
+  float: left;
+  list-style: none;
+}
+
+.primary-header ul{
+  margin: 0;
+  padding: 0;
+}
+
+.primary-header li {
+  display: inline-block;
+  margin: 0 10px;
+  padding-right: 20px;
+  border-right: 1px inset #83bc00;
+  border-right: 1px inset rgba(138, 193, 11, 0.3);
+  -moz-border-right: 1px inset #83bc00;
+  vertical-align: middle; 
+}
+
+.primary-header li:first-child {
+  border-right: 1.5px solid #6c8042;
+  padding-right: 10px;
+  height: 2.7vw;
+}
+
+.primary-header li:last-child {
+  border-right: 0;
+}
+
+.primary-header a{
+  font-size: 200%;
+  font-size: 2vw;
+  font-family: brush script mt, comic sans ms, cursive, serif;
+  font-style: initial;
+  color: #648880; 
+}
+
+.primary-header img{
+  width: 100%;
+  width: 14vw
+}
+/*========================================
+    тело
+=========================================*/
+.primary-section{
+ background: #fff;
+ min-height: 500px;
+}
+
+/*========================================
+    подвал
+=========================================*/
+.primary-footer{
+
+}
+
+.primary-footer a{
+   color: #5b7123;
+}
+
+.primary-footer span{
+  float: left;
+  font-size: 1.1vw;
+}
+
+.primary-footer ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  font-size: 18px;
+  font-size: 1.5vw;
+}
+
+.primary-footer li{
+  display: inline-block;
+  margin: 0 10px;
+}

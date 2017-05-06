@@ -1,0 +1,342 @@
+/*здесь будут стили для определенных элементов (стили для страницы)*/
+/*==================================================================
+	мои посты
+===================================================================*/
+.myStory{
+	border-top: 1px groove #e9e9e9;
+	margin: 25px 0;
+}
+
+.myStory > h3{
+	text-align: center;
+	color: #9e5800;
+	margin: 10px 0;
+}
+
+.myStory > img{
+	width: 100%;
+	height: 250px;
+}
+
+.myStory > div{
+	margin: 10px 0;
+}
+/*===================================================================
+	оформление для лога ошибок
+===================================================================*/
+.error_report{
+	color: red;
+}
+/*===================================================================
+	оформление для специальной ссылки c подчеркиванием
+===================================================================*/
+.specialLink{
+	color: #63813c;
+}
+
+/*===================================================================
+	структура для специального элемента списка (без пунктов)
+===================================================================*/
+.specialListStyle{
+	list-style-type: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*===================================================================
+	оформление для формы текстового ввода
+===================================================================*/
+.viewText{
+	border: 1px solid #c6c9cc;
+	border-radius: 2px;
+}
+
+.viewText:focus{
+	border-color: #648880;
+}
+
+.viewText:disabled{
+	background: #f9ffea;
+}
+/*===================================================================
+	оформление для кнопки
+===================================================================*/
+.viewBtn{
+	padding: 5px 10px;
+	margin: 2px;
+	font-weight: 600;
+	background: #fed167;
+	border: 0;
+	cursor: pointer;
+}
+
+.viewBtn:hover{
+	background: #ffd9a3;
+	transition: background 30ms linear;
+}
+/*===================================================================
+	струтура для формы текстового ввода
+===================================================================*/
+.structure-inputText{
+	width: 98%;
+	margin: 2px;
+}
+
+textarea.structure-inputText{
+	font: 300 16px/22px Arial;
+	height: 80px;
+	resize: none;
+}
+/*===================================================================
+	структуры и оформление для кнопки выбора файла
+===================================================================*/
+.file_upload{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;              /* example */
+    height: 2em;                 /* example */
+    line-height: 2em             /* the same as height */
+}
+.file_upload .button, .file_upload > mark{
+    display: block;
+    cursor: pointer              /* example */
+}
+.file_upload .button{
+    float: right;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 8em;                  /* example */
+    height: 100%;
+    text-align: center           /* example */
+}
+.file_upload > mark{
+    background: transparent;     /* example */
+    padding-left: 1em            /* example */
+}
+/*===================================================================
+	структуры для формы авторизаций
+===================================================================*/
+.structure-Authorization{
+	width: 80%;
+	margin: 0 auto;
+	min-width: 350px;
+}
+
+.structure-Authorization input[type=text],.structure-Authorization input[type=password]{
+	border-radius: 10px;
+	height: 40px;
+	font-size: 20px;
+}
+
+.structure-Authorization input[type=submit],.structure-Authorization button{
+	border-radius: 10px;
+	height: 40px;
+	font-size: 20px;
+	background: #fff0a7;
+}
+
+/*=====================================
+	панель для авторизации
+======================================*/
+.panel-Authorization{
+	background: #f9eedd url(/images/technical/authorization.jpg) center 0px fixed;
+	padding: 10px;
+	min-width: 300px;
+}
+
+.panel-Authorization h5{
+	text-align: center;
+	font-size: 30px;
+}
+
+.panel-Authorization p{
+	text-align: center;
+	font: 20px/15pt sans-serif;
+}
+
+/*=====================================
+	панель информация о сайте
+======================================*/
+.inform-Authorization{
+	width: 100%;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+.inform-Authorization img{
+	border-radius: 10px;
+    display: block;
+    margin-bottom: 22px;
+    width: 100%;
+    height: 200px;
+}
+
+.inform-Authorization article{
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 0.35vw;
+}
+/*===================================================================
+	структуры для формы аватарки
+===================================================================*/
+.structure_avatar{
+	text-align: center;
+}
+
+.structure_avatar img{
+	display: inline-block;
+  	vertical-align: middle;
+  	max-width: 95%;
+}
+/*===================================================================
+	структура для блока контейнера чата
+===================================================================*/
+.content-chat li{
+	padding: 10px;
+	margin: 10px 0;
+	border-top: 0px solid #000;
+	background: #f3ffd2;
+	min-width: 300px;
+}
+.content-chat img{
+	float: left;
+	margin: 0 10px 0 0;
+	height: 90px;
+	width: 90px;
+}
+/*===================================================================
+	структура для блока контейнера топика
+===================================================================*/
+.content-topic li{
+	padding: 5px 10px;
+	margin: 5px 0;
+	background: rgb(255, 231, 139);
+	border: 4px double #9abb9c;
+	border-radius: 5px;
+	min-width: 400px;
+}
+
+.content-topic li:hover{
+	background: rgb(255, 239, 177);
+}
+
+.content-topic img{
+	float: right;
+	padding-left: 30px;
+	min-width: 50px;
+	width: 20%;
+	min-height: 80px;
+	height: 12vw;
+}
+
+
+.content-topic div{
+	text-align: justify;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0;
+	width: 70%;
+	font-size: 1vw;
+}
+
+.content-topic h3{
+	margin: 0;
+}
+
+.content-topic h5{
+	margin: 5px 0;
+	margin: 0.7vh 0;
+}
+
+.content-topic span{
+	color: #333;
+	font-size: 1.2vw;
+}
+/*===================================================================
+	
+===================================================================*/
+.row{
+	min-width: 500px;
+}
+/*===================================================================
+	сетка для левого блока
+===================================================================*/
+.OneRow_left1{
+	float: left;
+	width: 25%;
+	margin-right: 1%;
+	min-width: 100px;
+}
+
+/*===================================================================
+	сетка для левого блока 2
+===================================================================*/
+.OneRow_left2{
+	float: left;
+	width: 3%;
+	min-width: 100px;
+}
+
+/*===================================================================
+	сетка для правого блока
+===================================================================*/
+.TwoRow_left1{
+	float: left;
+	width: 70%;
+	margin-left: 1%;
+	min-width: 100px;
+}
+/*===================================================================
+	структуры и оформление для блока приветствий
+===================================================================*/
+.notification{
+	margin: 10px auto;
+	text-align: center;
+	font-size: 25px;
+    font-style: oblique;
+}
+
+.notification strong{
+	font-weight: 600;
+}
+/*===================================================================
+	структура для пункы списка (перечисления)
+===================================================================*/
+.List-information li{
+	margin: 8px 0;
+	font-size: 15px;
+}
+
+/*===================================================================
+	структуры для панели меню пользователя
+===================================================================*/
+.user-menu{
+	min-width: 300px;
+	width: 30%;
+	margin: 10px auto;
+	padding: 0 auto;
+}
+
+.user-menu h2{
+	float: left;
+	margin: 0;
+}
+
+.user-menu button:first-of-type{
+	float: left;
+	margin: 5px 10px;
+}
+
+.user-menu button{
+	margin: 5px 0;
+}
+
+/*=====================================
+	офрмление для панели регистраций
+======================================*/
+.panel_registr{
+	background: url(http://udmpravda.ru/cache/Article/8091/big/%D0%92%D0%BD%D0%B5%D1%88%D1%82%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0.jpg?1423817925) no-repeat;
+}
+
